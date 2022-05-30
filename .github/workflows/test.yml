@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 netspaker_scan_job:
     runs-on: ubuntu-20.04
     steps:
@@ -17,6 +15,9 @@ netspaker_scan_job:
       # Displays output for action
       - name: Display Scan Request Message
         run: echo "${{ steps.netsparker-enterprise-scan-step.outputs.scan-message }}"
+# This is a basic workflow to help you get started with Actions
+
+
 name: CI
 
 # Controls when the workflow will run
