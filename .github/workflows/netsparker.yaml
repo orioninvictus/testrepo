@@ -17,7 +17,7 @@ jobs:
           scan-type: 'Incremental'
           profile-id: 'f55ba706-f8bc-471b-5aa0-ae6a01d8dd95'
           user-id: ${{ secrets.bdb3e6e42e8d4cd53ff8ae5801fec208 }}
-          api-token: ${{ secrets./CtmZHFp4ztPqFC5p3LXo9xnKEiuO0B2jXvhR6ClUuQ= }}
+          api-token: ${{ secrets.fIT+6HKMO3oio0QbIUYbi3GLq3DTHPv4/FrTZt438zY= }}
           base-url: 'https://www.netsparkercloud.com'
       # Displays output for action
       - name: Display Scan Request Message
