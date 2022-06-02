@@ -1,5 +1,13 @@
 name: CI
 
+on:
+  pull_request:
+    types:
+    - '*'
+  push:
+    branches:
+    - master
+    
 netspaker_scan_job:
     runs-on: ubuntu-20.04
     steps:
