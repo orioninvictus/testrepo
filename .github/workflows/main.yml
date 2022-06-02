@@ -1,8 +1,9 @@
 name: CI
-
-on: push
-    branches:
-    - master
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 jobs:
   netspaker_scan_job:
     runs-on: ubuntu-20.04
