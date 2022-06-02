@@ -1,7 +1,6 @@
 name: CI
 
-jobs:
-    netspaker_scan_job:
+netspaker_scan_job:
     runs-on: ubuntu-20.04
     steps:
       # Starts actions with given inputs
@@ -12,10 +11,9 @@ jobs:
           website-id: '3f77310b-a7a4-409d-0a90-ae6a01c37eda'
           scan-type: 'Incremental'
           profile-id: 'f55ba706-f8bc-471b-5aa0-ae6a01d8dd95'
-          user-id: ${{ secrets.bdb3e6e42e8d4cd53ff8ae5801fec208 }}
-          api-token: ${{ secrets./CtmZHFp4ztPqFC5p3LXo9xnKEiuO0B2jXvhR6ClUuQ= }}
+          user-id: ${{ secrets.NETSPARKER_USER_ID }}
+          api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
           base-url: 'https://www.netsparkercloud.com'
       # Displays output for action
       - name: Display Scan Request Message
         run: echo "${{ steps.netsparker-enterprise-scan-step.outputs.scan-message }}"
- 
