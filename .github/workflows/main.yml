@@ -4,8 +4,8 @@ on:
     branches: [ $default-branch ]
   pull_request:
     branches: [ $default-branch ]
-jobs:
-  netspaker_scan_job:
+  jobs:
+   netspaker_scan_job:
     runs-on: ubuntu-20.04
     steps:
       # Starts actions with given inputs
