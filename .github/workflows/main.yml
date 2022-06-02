@@ -24,8 +24,8 @@ jobs:
           website-id: '3f77310b-a7a4-409d-0a90-ae6a01c37eda'
           scan-type: 'Incremental'
           profile-id: 'f55ba706-f8bc-471b-5aa0-ae6a01d8dd95'
-          user-id: ${{ secrets.NETSPARKER_USER_ID }}
-          api-token: ${{ secrets.NETSPARKER_API_TOKEN }}
+          user-id: ${{ secrets.bdb3e6e42e8d4cd53ff8ae5801fec208 }}
+          api-token: ${{ secrets./CtmZHFp4ztPqFC5p3LXo9xnKEiuO0B2jXvhR6ClUuQ= }}
           base-url: 'https://www.netsparkercloud.com'
       # Displays output for action
       - name: Display Scan Request Message
