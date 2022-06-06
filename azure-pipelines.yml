@@ -1,13 +1,4 @@
 # Starter pipeline
-  task: netsparker-cloud@1
-  inputs:
-    apiConnection: 'azuredevopstest'
-    scanTypes: '0'
-    scanWebSites: '3f77310b-a7a4-409d-0a90-ae6a01c37eda'
-    scanWebSitesProfile: 'f55ba706-f8bc-471b-5aa0-ae6a01d8dd95'
-    buildFail: true
-    severity: 'Critical'
-    isConfirmed: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -22,6 +13,17 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+jobs:
+
+  task: netsparker-cloud@1
+  inputs:
+    apiConnection: 'azuredevopstest'
+    scanTypes: '0'
+    scanWebSites: '3f77310b-a7a4-409d-0a90-ae6a01c37eda'
+    scanWebSitesProfile: 'f55ba706-f8bc-471b-5aa0-ae6a01d8dd95'
+    buildFail: true
+    severity: 'Critical'
+    isConfirmed: true
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
